@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Activities List</h1>
+    </header>
+
+    <main>
+      <button type="button" class="button blue btnReg mobile" id="registerActivity">Register Activity</button>
+      <table class="records">
+        <thead>
+          <tr>
+            <th>Activity Name</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fazer Prova</td>
+            <td>Fazer Prova de Redes e Segunarç</td>
+            <td>16/06/2022</td>
+            <td>
+              <div>
+                <button type="button" class="button green">Edit</button>
+                <button type="button" class="button red">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Fazer Prova</td>
+            <td>Fazer Prova de Redes e Segunarç</td>
+            <td>16/06/2022</td>
+            <td>
+              <div>
+                <button type="button" class="button green">Edit</button>
+                <button type="button" class="button red">Delete</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Fazer Prova</td>
+            <td>Fazer Prova de Redes e Segunarç</td>
+            <td>16/06/2022</td>
+            <td>
+              <div>
+                <button type="button" class="button green">Edit</button>
+                <button type="button" class="button red">Delete</button>
+              </div>
+            </td>
+          </tr>
+
+          </tr>
+        </tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class= "modal-header">
+            <h2>Nova Atividade</h2>
+            <span class="modal-close" id="modalClose">&#10006</span>
+          </header>
+          <form class="modal-form">
+            <input type="text" class="modal-field field " placeholder="Nome da Atividade">
+            <!-- <input type="text" class="modal-field" placeholder="Descrição"> -->
+            <textarea name="description" id="description" cols="30" rows="10" class="modal-field" placeholder="Descrição"></textarea>
+            <input type="date" class="modal-field field">
+          </form>
+          <footer class="modal-footer">
+            <button class="button green">Save</button>
+            <button class="button blue" id="modalCancel">Cancel</button>
+
+
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer>Criado por <a href="#">Wellington Silva</a> | &copy 2022 All Rights
+      Reserved</footer>
+  </body>
+</html>
