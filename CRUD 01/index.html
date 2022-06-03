@@ -9,18 +9,29 @@
   </head>
   <body>
     <header>
-      <h1 class="header-title">Activities List</h1>
+      <h1 class="header-title">Task List</h1>
     </header>
     <main class="container">
       <div class="content-form">
         <form autocomplete="off" onsubmit="onFormSubmit()">
           <div>
-            <label for="productCode">Task</label>
-            <input type="text" name="productCode" id="productCode" />
+            <label for="task">Task</label>
+            <input type="text" name="task" id="task" class="field" />
           </div>
           <div>
-            <label for="product">Description</label>
-            <input type="text" name="product" id="product" />
+            <label for="description">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="33"
+              rows="7"
+            ></textarea>
+            <!-- <input
+              type="text"
+              name="description"
+              id="description"
+              class="field"
+            /> -->
           </div>
           <div class="form_action--button">
             <input type="submit" value="Submit" />
@@ -34,12 +45,17 @@
           <thead>
             <tr>
               <div class="content-cell">
-                <p class="task">Task</p>
-                <p class="desc">Description</p>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Action</th>
               </div>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody>
+            <td class="hide"></td>
+            <td class="hide"></td>
+            <td class="hide"></td>
+          </tbody>
         </table>
       </div>
     </main>
